@@ -1,10 +1,10 @@
-#- name: install nginx package
-#  apt: name=nginx state=latest
-#- name: start nginx service
-#  service: name=nginx enabled=false state=started
+- name: install nginx package
+  apt: name=nginx state=latest
+- name: start nginx service
+  service: name=nginx enabled=false state=started
 - name: test vars
   vars:
-    uservar: root
+    - uservar: root
   vars_file: 
     - /vars/main.yml
   user: "{{ uservar }}"
