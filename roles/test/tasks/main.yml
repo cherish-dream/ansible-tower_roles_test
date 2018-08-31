@@ -1,14 +1,13 @@
-#- name: install nginx package
-#  apt: name=nginx state=latest
-#- name: start nginx service
-#  service: name=nginx enabled=false state=started
-#- name: test vars
 - name: install nginx package
-  vars:
-    - uservar: root
-  vars_file: 
-    - /vars/main.yml
-  user: "{{ uservar }}"
-  shell: echo "{{ echovar }}"
-#- name: test shell command
-#  shell: touch /root/test/8888.txt
+  apt: name=nginx state=latest
+- name: start nginx service
+  service: name=nginx enabled=false state=started
+#- name: test vars
+#  vars:
+#    - uservar: root
+#  vars_file: 
+#    - /vars/main.yml
+#  user: "{{ uservar }}"
+#  shell: echo "{{ echovar }}"
+- name: test shell command
+  shell: touch /root/test/888999.txt
