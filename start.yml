@@ -2,4 +2,4 @@
   hosts: mfs_node
   remote_user: root
   roles: 
-    - test
+     - test
