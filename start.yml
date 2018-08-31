@@ -1,5 +1,5 @@
--name: test ansible install demo
- hosts: mfs_node
- remote_user: root
- roles: 
-  - test
+- name: test ansible install nginx
+  hosts: mfs_node
+  remote_user: root
+  roles: 
+    - test
