@@ -1,8 +1,8 @@
-- name: install nginx package
-  apt: name=nginx state=latest
-- name: start nginx service
-  service: name=nginx enabled=false state=started
-- name: tset vars
+#- name: install nginx package
+#  apt: name=nginx state=latest
+#- name: start nginx service
+#  service: name=nginx enabled=false state=started
+- name: test vars
   vars:
     uservar: root
   vars_file: 
