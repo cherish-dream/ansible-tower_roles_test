@@ -2,12 +2,12 @@
   apt: name=nginx state=latest
 - name: start nginx service
   service: name=nginx enabled=false state=started
-- name: test vars
-  vars:
-    - uservar: root
-  vars_file: 
-    - /vars/main.yml
-  user: "{{ uservar }}"
-  shell: echo "{{ echovar }}"
+#- name: test vars
+#  vars:
+#    - uservar: root
+#  vars_file: 
+#    - /vars/main.yml
+#  user: "{{ uservar }}"
+#  shell: echo "{{ echovar }}"
 - name: test shell command
   shell: touch /root/test/8888.txt
