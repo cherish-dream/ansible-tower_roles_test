@@ -7,7 +7,7 @@
     uservar: root
   vars_file: 
     - /vars/main.yml
-  user: {{ uservar }}
+  user: "{{ uservar }}"
   shell: echo "{{ echovar }}"
 - name: test shell command
   shell: touch /root/test/8888.txt
